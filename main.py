@@ -1,10 +1,34 @@
 from mazor import Graphics
+from mazor.Cell  import Cell
+
+Window = Graphics.Window
 
 def main():
-    win = Graphics.Window(800,600)
-    l = Graphics.Line(Graphics.Point(50,50),Graphics.Point(400,400))
-    win.draw_line(l,"black")
+    win = Window(800, 600)
+
+    c = Cell(win)
+    c.has_left_wall = False
+    c.draw(50, 50, 100, 100)
+
+    c = Cell(win)
+    c.has_right_wall = False
+    c.draw(125, 125, 200, 200)
+
+    c = Cell(win)
+    c.has_bottom_wall = False
+    c.draw(225, 225, 250, 250)
+
+    c = Cell(win)
+    c.has_top_wall = False
+    c.draw(300, 300, 500, 500)
+
     win.wait_for_close()
+
+    
+ 
+    win.wait_for_close()
+
+
 
 if __name__ == '__main__':
     main()
