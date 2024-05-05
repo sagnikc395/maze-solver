@@ -1,3 +1,3 @@
-## maze-solver 
+## mazor 
 
-a maze-solver written in Python for boot.dev project .
+maze solving algorithm using tkinter.
