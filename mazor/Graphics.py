@@ -10,7 +10,7 @@ class Window:
         # set tht title property of the root widget 
         self.__root.title("maze-solver")
         # canvas widget and set to data member 
-        self.__canvas = Canvas(self.__root,height=self.height,width=self.width)
+        self.__canvas = Canvas(self.__root,bg="white",height=self.height,width=self.width)
         self.__canvas.pack()
         self.__is_running = False 
         self.__root.protocol("WM_DELETE_WINDOW",self.close)
